@@ -33,6 +33,9 @@
                     <li><a class="dropdown-item" href="lista3.php">Marca: Nike</a></li>
                     <li><a class="dropdown-item" href="lista4.php">Precio: mayor a $500</a></li>
                 </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="agregar.html">Agregar +</a>
+                </li>
                 </li>
             </ul>
             </div>

@@ -33,6 +33,9 @@
                     <li><a class="dropdown-item" href="lista3.php">Marca: Nike</a></li>
                     <li><a class="dropdown-item" href="lista4.php">Precio: mayor a $500</a></li>
                 </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="agregar.html">Agregar +</a>
+                </li>
                 </li>
             </ul>
             </div>
@@ -50,6 +53,8 @@
                 <th>Talle</th>
                 <th>Precio</th>
                 <th>Foto</th>
+                <th></th>
+                <th></th>
             </tr>
             <?php 
                 //Conexión a la bd
@@ -69,6 +74,9 @@
                     <td><?php echo $reg['talle']; ?></td>
                     <td><?php echo $reg['precio']; ?></td>
                     <td><img src="data:image/jpg;base64, <?php echo base64_encode($reg['imagen']) ?>"</td>
+                    <td><a href="modificar.php?id=<?php echo $reg['id']; ?>">Modificar</a></td>
+                    <td><a href="borrar.php?id=<?php echo $reg['id'];?>">Eliminar</a></td>
+
                  </tr>   
                <?php } ?>
         </table>

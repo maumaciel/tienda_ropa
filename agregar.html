@@ -31,6 +31,27 @@
         </nav>
     <header>
     <main>
+        <h1>Agregar ropa</h1>
+        <p>Ingrese los datos de la prenda:</p>
+        <form action="agregar.php" method="POST" enctype="multipart/form-data">
+            
+            <label>Tipo de prenda</label>
+            <input type="text" name="tipo_prenda" placeholder="tipo de prenda" required>
+
+            <label>Marca</label>
+            <input type="text" name="marca" placeholder="marca" required>
+
+            <label>Talle</label>
+            <input type="text" name="talle" placeholder="talle" required>
+
+            <label>Precio</label>
+            <input type="text" name="precio" placeholder="precio" required>
+
+            <label>Imagen</label>
+            <input type="file" name="imagen" placeholder="imagen" required>
+
+            <input type="submit" name="submit" value="Ingresar">
+        </form>
     </main>
     
     <footer></footer>
